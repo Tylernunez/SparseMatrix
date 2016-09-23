@@ -12,13 +12,17 @@ namespace SparseMatrix
         private int column;
         private int value;
 
-        public Node insertFront(Node node, HeadNode head)
+        public ValueNode(int row, int column, int value)
         {
 
-            node.next = head;
+        }
+
+        public Node insertFron(Node node, HeadNode head)
+        {
+            node.setNextInRow(head);
             return node;
         }
-        public void print(HeadNode head)
+        public void print(HeadNode head, Node node)
         {
             if(head == null)
             {
@@ -27,8 +31,11 @@ namespace SparseMatrix
             do
             {
                 System.Console.WriteLine(node.value);
-                node = node.next;
+                node = node.nextInRow();
             } while (node != head);
         }
-    }
+        
+           public int getRow
+        
+    }S
 }

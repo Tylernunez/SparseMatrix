@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SparseMatrix
 {
-    abstract class HeadNode
+    abstract class HeadNode : Node
     {
         public abstract HeadNode getNext();
 
@@ -20,5 +20,6 @@ namespace SparseMatrix
         {
             return null;
         }
+     
     }
 }

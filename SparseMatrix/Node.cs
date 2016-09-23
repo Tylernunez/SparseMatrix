@@ -8,13 +8,23 @@ namespace SparseMatrix
 {
    abstract class Node
     {
-        private Node nextInRow()
+        private Node nextInRow;
+        private Node nextInColumn;
+        public Node getNextInRow()
         {
-            return null;
+            return this.nextInRow;
         }
-        private Node nextInColumn()
+        public void setNextInRow(Node next)
         {
-            return null;
+            this.nextInRow = next;
+        }
+        public Node getNextInColumn()
+        {
+            return this.nextInColumn;
+        }
+        public void setNextInColumn(Node next)
+        {
+            this.nextInColumn = next;
         }
     }
 }
