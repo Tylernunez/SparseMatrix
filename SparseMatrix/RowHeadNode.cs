@@ -8,5 +8,13 @@ namespace SparseMatrix
 {
     class RowHeadNode : HeadNode
     {
+        public override HeadNode getNext()
+        {   
+            return getNextInRow();
+        }
+        public override ValueNode getFirst()
+        {
+            return node;
+        }
     }
 }

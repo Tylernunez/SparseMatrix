@@ -12,9 +12,9 @@ namespace SparseMatrix
 
         public abstract ValueNode getFirst();
 
-        public void insert(ValueNode Value)
+        public void insert(ValueNode value)
         {
-
+            value.setNextInRow(value);
         }
         public ValueNode get(int position)
         {
