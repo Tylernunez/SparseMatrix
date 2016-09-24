@@ -18,21 +18,7 @@ namespace SparseMatrix
             this.column = column;
             this.value = value;
         }
-
-        public void print(HeadNode head, ValueNode node)
-        {
-            if(head == null)
-            {
-                return;
-            }
-            do
-            {
-                System.Console.WriteLine(node.getValue());
-                node.setNextInRow(head);
-            } while (node != head);
-        }
-        
-           
+    
         public int getRow()
         {
             return this.row;

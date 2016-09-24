@@ -10,11 +10,11 @@ namespace SparseMatrix
     {
         public override HeadNode getNext()
         {   
-            return getNextInRow();
+            return (HeadNode)getNextInRow();
         }
         public override ValueNode getFirst()
         {
-            return node;
+            return null;
         }
     }
 }

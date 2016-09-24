@@ -12,7 +12,7 @@ namespace SparseMatrix
         {
 
         }
-        public int getValue(int row, int column,)
+        public int getValue(int row, int column)
         {
             return 0;
         }
